@@ -1,0 +1,79 @@
+---
+title: "Phone Number"
+author: "Steve Myles"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Introduction to phonenumber
+
+This document describes the usage of the two functions in the `phonenumber`
+package. Note that, though this package's functions convert back and forth from
+numbers to English letters as on a telephone's keypad.  Note that the length of
+the character string need not conform to any standard length telephone number.
+
+### phonenumber's functions
+
+* `letterToNumber`
+* `numberToLetter`
+
+### Telephone keypad
+
+For purposes of this package, the mapping of numbers to letters on a telephone's
+keypad are as follows:
+
+* 2 corresponds to A, B, C
+* 3 corresponds to D, E, F
+* 4 corresponds to G, H, I
+* 5 corresponds to J, K, L
+* 6 corresponds to M, N, O
+* 7 corresponds to P, Q, R, S
+* 8 corresponds to T, U, V
+* 9 corresponds to W, X, Y, Z
+* 1 and 0 do not have corresponding letters
+
+(I am aware that on some telephones, primarily older models, Q and Z are mapped
+to 0 rather than to 7 and 9.)
+
+## `letterToNumber`
+
+`letterToNumber` converts a string containing letters into the corresponding 
+numbers on a telephone's keypad. For example, if the user wants to know what telephone number corresponds to "Texas:"
+
+```{r letterToNumber ex1, echo = TRUE}
+string <- "Texas"
+letterToNumber(string)
+```
+
+The function is not limited to letters, though. Any numeric characters are
+returned as is and any non-alphanumeric characters (including spaces) are 
+converted to dashes (-) and 1 and 0 are returned as is:
+
+```{r letterToNumber ex2, echo = TRUE}
+string <- "Texas is #1"
+letterToNumber(string)
+```
+
+## `numberToLetter`
+
+`numberToLetter` converts a string containing numbers into the corresponding 
+letters on a telephone's keypad. For example, if the user wants to know what 
+possible character strings could be spelled by a sequence of numbers (e.g., 22):
+
+```{r numberToLetter ex1, echo = TRUE}
+string <- "22"
+numberToLetter(string)
+```
+
+The function is not limited to numbers, though. Any alphabetic characters are
+returned as is and any non-alphanumeric characters (including spaces) are 
+converted to dashes (-) and 1 and 0 are returned as is:
+
+```{r numberToLetter ex2, echo = TRUE}
+string <- "806!"
+numberToLetter(string)
+```

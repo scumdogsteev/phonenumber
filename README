@@ -1,0 +1,8 @@
+phonenumber
+===========
+
+An R package that converts English letters to numbers or numbers to English 
+letters as on a telephone keypad. When converting letters to numbers, a 
+character vector is returned with "A," "B," or "C" becoming 2, "D," "E", or "F" becoming 3, etc. When converting numbers to letters, a character vector is 
+returned with multiple elements (i.e., "2" becomes a vector of "A," "B," and \
+"C").
