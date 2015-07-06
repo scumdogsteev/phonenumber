@@ -5,6 +5,7 @@
 #' all possible letter combinations as on from a telephone's key pad
 #' 
 #' @param value An input value as a character vector with one element (a string)
+#' @param decreasing Whether to sort the results in alphabetical order or not
 #' 
 #' @export
 #' 
@@ -12,7 +13,6 @@
 #' numberToLetter("911")
 #' numberToLetter(911)
 #' numberToLetter("911!")
-#' numberToLetter()
 #' 
 #' @return A character vector of letters and dashes based on value
 

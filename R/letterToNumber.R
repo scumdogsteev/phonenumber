@@ -13,6 +13,7 @@
 #' string <- "Phone Number"
 #' letterToNumber(string)
 #' letterToNumber("Jenny's Number is 867-5309")
+#' 
 #' @return A character vector of numbers and dashes based on value
 
 letterToNumber <- function(value) {

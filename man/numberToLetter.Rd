@@ -8,6 +8,8 @@ numberToLetter(value, decreasing = FALSE)
 }
 \arguments{
 \item{value}{An input value as a character vector with one element (a string)}
+
+\item{decreasing}{Whether to sort the results in alphabetical order or not}
 }
 \value{
 A character vector of letters and dashes based on value
@@ -20,6 +22,5 @@ all possible letter combinations as on from a telephone's key pad
 numberToLetter("911")
 numberToLetter(911)
 numberToLetter("911!")
-numberToLetter()
 }
 
