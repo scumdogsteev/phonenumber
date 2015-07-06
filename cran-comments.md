@@ -1,5 +1,5 @@
 ## Test environments
-* win-builder (devel and release)
+* Windows 8.1, R 3.1.3
 
 ## R CMD check results
 There were no ERRORs or WARNINGs. 
