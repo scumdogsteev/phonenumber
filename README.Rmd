@@ -27,7 +27,7 @@ Both functions convert non-alphanumeric characters to dash (-) and perform no
 conversion on their respective base character type (i.e., `letterToNumber` 
 leaves letters as is and `numberToLetter` leaves numbers as is).
 
-### Telephone keypad
+#### Telephone keypad
 
 For purposes of this package, the mapping of numbers to letters on a telephone's
 keypad are as follows:
@@ -45,15 +45,13 @@ keypad are as follows:
 (I am aware that on some telephones, primarily older models, Q and Z are mapped
 to 0 rather than to 7 and 9.)
 
-### Examples
+#### Examples
 
 ```{r library, echo=FALSE}
 library(phonenumber)
 ```
 
-#### `letterToNumber`
-
-`letterToNumber` converts a string containing letters into the corresponding 
+*`letterToNumber`* converts a string containing letters into the corresponding 
 numbers on a telephone's keypad. For example, if the user wants to know what telephone number corresponds to "Texas:"
 
 ```{r letterToNumber}
@@ -61,9 +59,7 @@ string <- "Texas"
 letterToNumber(string)
 ```
 
-### `numberToLetter`
-
-`numberToLetter` converts a string containing numbers into the corresponding 
+*`numberToLetter`* converts a string containing numbers into the corresponding 
 letters on a telephone's keypad. For example, if the user wants to know what 
 possible character strings could be spelled by a sequence of numbers (e.g., 22):
 
