@@ -2,7 +2,7 @@
 phonenumber
 ===========
 
-`phonenumber` is an R package that convert English letters to numbers or numbers to English letters as on a telephone keypad. The package consists of two functions:
+**`phonenumber`** is an R package that convert English letters to numbers or numbers to English letters as on a telephone keypad. The package consists of two functions:
 
 1.  `letterToNumber` - converts letters in a string to numbers
 2.  `numberToLetter` - converts numbers in a string to letters
@@ -27,7 +27,7 @@ For purposes of this package, the mapping of numbers to letters on a telephone's
 
 #### Examples
 
-*`letterToNumber`* converts a string containing letters into the corresponding numbers on a telephone's keypad. For example, if the user wants to know what telephone number corresponds to "Texas:"
+**`letterToNumber`** converts a string containing letters into the corresponding numbers on a telephone's keypad. For example, if the user wants to know what telephone number corresponds to "Texas:"
 
 ``` r
 string <- "Texas"
@@ -35,7 +35,7 @@ letterToNumber(string)
 #> [1] "83927"
 ```
 
-*`numberToLetter`* converts a string containing numbers into the corresponding letters on a telephone's keypad. For example, if the user wants to know what possible character strings could be spelled by a sequence of numbers (e.g., 22):
+**`numberToLetter`** converts a string containing numbers into the corresponding letters on a telephone's keypad. For example, if the user wants to know what possible character strings could be spelled by a sequence of numbers (e.g., 22):
 
 ``` r
 string <- "22"
