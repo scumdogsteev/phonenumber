@@ -2,7 +2,35 @@
 phonenumber
 ===========
 
-**`phonenumber`** is an R package that convert English letters to numbers or numbers to English letters as on a telephone keypad. The package consists of two functions:
+**`phonenumber`** is an R package that convert English letters to numbers or numbers to English letters as on a telephone keypad.
+
+Author: Steve Myles (<steve@mylesandmyles.info>)
+
+Project Home: <http://steve.mylesandmyles.info/projects/phonenumber/>
+
+License: MIT license
+
+### Installation
+
+-   `phonenumber` is available [on CRAN](http://cran.r-project.org/web/packages/phonenumber/index.html) and can be installed accordingly:
+
+    ``` r
+    install.packages("phonenumber")
+    library(phonenumber)
+    ```
+
+-   You can also install `phonenumber` from GitHub using the `devtools` package:
+
+    ``` r
+    install.packages("devtools")
+    library("devtools")
+    install_github("scumdogsteev/phonenumber")
+    library(phonenumber)
+    ```
+
+### Usage
+
+The package consists of two functions:
 
 1.  `letterToNumber` - converts letters in a string to numbers
 2.  `numberToLetter` - converts numbers in a string to letters
