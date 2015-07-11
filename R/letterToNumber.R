@@ -9,9 +9,19 @@
 #' @export
 #' 
 #' @examples
+#' # Convert an alphabetic string can be converted directly (with 
+#' # non-alphanumeric characters replaced by dashes)
+#' 
 #' letterToNumber("R functions")
+#' 
+#' # Of course, vectors containing strings can also be converted
+#' 
 #' string <- "Phone Number"
 #' letterToNumber(string)
+#' 
+#' # Alphanumeric strings can also be converted with numbers being returned as
+#' # is
+#' 
 #' letterToNumber("Jenny's Number is 867-5309")
 #' 
 #' @return A character vector of numbers and dashes based on value

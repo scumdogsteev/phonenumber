@@ -1,10 +1,10 @@
 ---
-title: "Phone Number"
+title: "phonenumber"
 author: "Steve Myles"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteIndexEntry{phonenumber}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -13,7 +13,7 @@ vignette: >
 
 This document describes the usage of the two functions in the `phonenumber`
 package. Note that, though this package's functions convert back and forth from
-numbers to English letters as on a telephone's keypad.  Note that the length of
+numbers to English letters as on a telephone's keypad, the length of
 the character string need not conform to any standard length telephone number.
 
 ### phonenumber's functions

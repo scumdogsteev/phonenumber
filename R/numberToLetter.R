@@ -10,9 +10,20 @@
 #' @export
 #' 
 #' @examples
+#' # Convert a string or a vector of numeric characters
+#' 
 #' numberToLetter("911")
+#' x <- "911"
+#' numberToLetter(x)
+#' 
+#' # Convert a number directly
+#' 
 #' numberToLetter(911)
-#' numberToLetter("911!")
+#' 
+#' # Convert an alphanumeric string (letters are returned as is and
+#' # non-alphanumeric characters are returned as dashes)
+#' 
+#' numberToLetter("dial 911!")
 #' 
 #' @return A character vector of letters and dashes based on value
 
