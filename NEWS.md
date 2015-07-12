@@ -6,6 +6,6 @@
 - add URLs to DESCRIPTION
 - updates to README
 
-# phonenumber v0.1.0
+# phonenumber v0.1.0 - hyperalloy combat chassis
 
 - first version of phonenumber
