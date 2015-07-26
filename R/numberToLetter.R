@@ -40,7 +40,7 @@ numberToLetter <- function(value, decreasing = FALSE, qz = 1) {
         value <- toupper(value)
         valueSplit <- strsplit(value, "")[[1]]    
         strList <- list()
-        mapphone <- function(char) {
+        phonemap <- function(char) {
             if (char == "2") { strsplit(LETTERS[1:3], "") } else {
             if (char == "3") { strsplit(LETTERS[4:6], "") } else {
             if (char == "4") { strsplit(LETTERS[7:9], "") } else {
@@ -54,15 +54,15 @@ numberToLetter <- function(value, decreasing = FALSE, qz = 1) {
         for (char in valueSplit) {        
             letterSplit <- if (qz == 0) { if (char == "0") { list(LETTERS[17], 
                                                                   LETTERS[26]) 
-                                            } else { 
+                                        } else { 
                                           if (char == "7") { c(LETTERS[16], 
                                                       strsplit(LETTERS[18:19],
                                                                "")) } else { 
                                           if (char == "9") { 
                                               strsplit(LETTERS[23:25], "") }
-                                          else { mapphone(char) }}}} 
-                           else { mapphone(char) }
-            strList[[length(strList)+1]] <- letterSplit
+                                          else { phonemap(char) }}}} 
+                           else { phonemap(char) }
+            strList[[length(strList) + 1]] <- letterSplit
         }
         strDF <- expand.grid(strList)
         lettString <- do.call(paste0, strDF[1:ncol(strDF)])

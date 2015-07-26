@@ -39,21 +39,20 @@ letterToNumber <- function(value, qz = 1) {
         value <- toupper(value)
         valueSplit <- strsplit(value, "")[[1]]
         numString <- as.character()
-        phonemap <- function(char) {        
-            ifelse(is.element(char, LETTERS[1:3]), "2",
-            ifelse(is.element(char, LETTERS[4:6]), "3",
-            ifelse(is.element(char, LETTERS[7:9]), "4",
-            ifelse(is.element(char, LETTERS[10:12]), "5",
-            ifelse(is.element(char, LETTERS[13:15]), "6",
-            ifelse(is.element(char, LETTERS[16:19]), "7",
-            ifelse(is.element(char, LETTERS[20:22]), "8",
-            ifelse(is.element(char, "-") | 
-                       suppressWarnings(!is.na(as.numeric(char))), char,
-            "9"))))))))
-        }
         for (char in valueSplit) {
             if (qz == 0 && (char == LETTERS[17] | char == LETTERS[26])) 
-                { elem <- "0" } else { elem <- phonemap(char) }
+                { elem <- "0" 
+            } else { elem <- ifelse(is.element(char, LETTERS[1:3]), "2",
+                             ifelse(is.element(char, LETTERS[4:6]), "3",
+                             ifelse(is.element(char, LETTERS[7:9]), "4",
+                             ifelse(is.element(char, LETTERS[10:12]), "5",
+                             ifelse(is.element(char, LETTERS[13:15]), "6",
+                             ifelse(is.element(char, LETTERS[16:19]), "7",
+                             ifelse(is.element(char, LETTERS[20:22]), "8",
+                             ifelse(is.element(char, "-") | 
+                                    suppressWarnings(!is.na(as.numeric(char))), char,
+                                "9")))))))) 
+            }  
             numString <- c(numString, elem)
         }
         return(paste0(numString, collapse = ""))
