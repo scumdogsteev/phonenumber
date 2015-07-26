@@ -4,12 +4,14 @@
 \alias{numberToLetter}
 \title{Convert numbers to letters as on a telephone's keypad}
 \usage{
-numberToLetter(value, decreasing = FALSE)
+numberToLetter(value, decreasing = FALSE, qz = 1)
 }
 \arguments{
 \item{value}{An input value as a character vector with one element (a string)}
 
 \item{decreasing}{Whether to sort the results in alphabetical order or not}
+
+\item{qz}{Whether to assign q and z to zero (qz = 0) or not (any other value)}
 }
 \value{
 A character vector of letters and dashes based on value
@@ -21,17 +23,22 @@ all possible letter combinations as on from a telephone's key pad
 \examples{
 # Convert a string or a vector of numeric characters
 
-numberToLetter("911")
+numberToLetter("911") # returns "W11" "X11" "Y11" "Z11"
 x <- "911"
-numberToLetter(x)
+numberToLetter(x) # also returns "W11" "X11" "Y11" "Z11"
 
 # Convert a number directly
 
-numberToLetter(911)
+numberToLetter(911) # also returns "W11" "X11" "Y11" "Z11"
 
 # Convert an alphanumeric string (letters are returned as is and
 # non-alphanumeric characters are returned as dashes)
 
-numberToLetter("dial 911!")
+numberToLetter("dial 911!") # returns "DIAL-W11-" "DIAL-X11-" "DIAL-Y11-" "DIAL-Z11-"
+
+# Specifying qz = 0 maps "q" and "z" to 0 instead of 7 and 9
+
+numberToLetter("000") # returns "000"
+numberToLetter("000", qz = 0) # returns "QQQ" "QQZ" "QZQ" "QZZ" "ZQQ" "ZQZ" "ZZQ" "ZZZ"
 }
 

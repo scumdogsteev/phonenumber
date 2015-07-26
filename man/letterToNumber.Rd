@@ -4,10 +4,12 @@
 \alias{letterToNumber}
 \title{Convert letters to numbers as on a telephone's keypad}
 \usage{
-letterToNumber(value)
+letterToNumber(value, qz = 1)
 }
 \arguments{
 \item{value}{An input value as a character vector with one element (a string)}
+
+\item{qz}{Whether to assign q and z to zero (qz = 0) or not (any other value)}
 }
 \value{
 A character vector of numbers and dashes based on value
@@ -20,16 +22,21 @@ from a telephone's key pad
 # Convert an alphabetic string can be converted directly (with
 # non-alphanumeric characters replaced by dashes)
 
-letterToNumber("R functions")
+letterToNumber("R functions") # returns "7-386284667"
 
 # Of course, vectors containing strings can also be converted
 
 string <- "Phone Number"
-letterToNumber(string)
+letterToNumber(string) # returns "74663-686237"
 
 # Alphanumeric strings can also be converted with numbers being returned as
 # is
 
-letterToNumber("Jenny's Number is 867-5309")
+letterToNumber("Jenny's Number is 867-5309") # returns "53669-7-686237-47-867-5309"
+
+# Specifying qz = 0 maps "q" and "z" to 0 instead of 7 and 9
+
+letterToNumber("qz") # returns "79"
+letterToNumber("qz", qz = 0) # returns ("00")
 }
 
