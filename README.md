@@ -51,8 +51,7 @@ Both functions convert non-alphanumeric characters to dash (-) and perform no co
 
 For purposes of this package, the mapping of numbers to letters on a telephone's keypad are as follows:
 
--   (**Default behavior**) If parameter `qz` is omitted (or has a value other than
-     0):
+-   *Default behavior* - if parameter `qz` is omitted (or has a value other than 0):
     -   2 corresponds to A, B, C
     -   3 corresponds to D, E, F
     -   4 corresponds to G, H, I
@@ -62,7 +61,7 @@ For purposes of this package, the mapping of numbers to letters on a telephone's
     -   8 corresponds to T, U, V
     -   9 corresponds to W, X, Y, Z
     -   0 and 1 have no corresponding letters
--   (**Alternate behavior**) If parameter `qz` = 0:
+-   *Alternate behavior* - if parameter `qz` = 0:
     -   2 corresponds to A, B, C
     -   3 corresponds to D, E, F
     -   4 corresponds to G, H, I
