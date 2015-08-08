@@ -34,35 +34,30 @@
 #' @return A character vector of letters and dashes based on value
 
 numberToLetter <- function(value, decreasing = FALSE, qz = 1) {
-    if(is.na(value)) { stop("Argument must be a string.") } else {
-        value <- as.character(value)
-        value <- gsub("[^A-Za-z0-9]", "-", value)
-        value <- toupper(value)
-        valueSplit <- strsplit(value, "")[[1]]    
-        strList <- list()
-        phonemap <- function(char) {
-            if (char == "2") { strsplit(LETTERS[1:3], "") } else {
-            if (char == "3") { strsplit(LETTERS[4:6], "") } else {
-            if (char == "4") { strsplit(LETTERS[7:9], "") } else {
-            if (char == "5") { strsplit(LETTERS[10:12], "") } else {
-            if (char == "6") { strsplit(LETTERS[13:15], "") } else {
-            if (char == "7") { strsplit(LETTERS[16:19], "") } else {
-            if (char == "8") { strsplit(LETTERS[20:22], "") } else {
-            if (char == "9") { strsplit(LETTERS[23:26], "") } else { char } 
-            }}}}}}}
+    value <- as.character(value)
+    value <- gsub("[^A-Za-z0-9]", "-", value)
+    value <- toupper(value)
+    valueSplit <- strsplit(value, "")[[1]]    
+    strList <- list()
+    phonemap <- function(char) { if (char == "2") { strsplit(LETTERS[1:3], "") 
+        } else { if (char == "3") { strsplit(LETTERS[4:6], "") 
+        } else { if (char == "4") { strsplit(LETTERS[7:9], "") 
+        } else { if (char == "5") { strsplit(LETTERS[10:12], "") 
+        } else { if (char == "6") { strsplit(LETTERS[13:15], "") 
+        } else { if (char == "7") { strsplit(LETTERS[16:19], "") 
+        } else { if (char == "8") { strsplit(LETTERS[20:22], "") 
+        } else { if (char == "9") { strsplit(LETTERS[23:26], "") } else { char } 
+        }}}}}}}
         }
-        letterSplit <- function(char) { 
-            if (qz == 0) {if (char == "0") { list(LETTERS[17], LETTERS[26]) 
-            } else { if (char == "7") { c(LETTERS[16], strsplit(LETTERS[18:19],
-                                        "")) } 
-                else { if (char == "9") { strsplit(LETTERS[23:25], "") }
-                                                  else { phonemap(char) }}}} 
-            else { phonemap(char) }
-            }
-        strList <- lapply(valueSplit, letterSplit)
-        strDF <- expand.grid(strList)
-        lettString <- do.call(paste0, strDF[1:ncol(strDF)])
-        lettString <- sort(lettString, decreasing)
-        return(lettString)
-    }
+    letterSplit <- function(char) { if (qz == 0) {if (char == "0") { 
+        list(LETTERS[17], LETTERS[26]) } else { if (char == "7") { 
+            c(LETTERS[16], strsplit(LETTERS[18:19], "")) } else { 
+                if (char == "9") { strsplit(LETTERS[23:25], "") 
+                } else { phonemap(char) }}}} else { phonemap(char) } 
+        }
+    strList <- lapply(valueSplit, letterSplit)
+    strDF <- expand.grid(strList)
+    lettString <- do.call(paste0, strDF[1:ncol(strDF)])
+    lettString <- sort(lettString, decreasing)
+    return(lettString)
 }

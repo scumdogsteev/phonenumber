@@ -1,6 +1,7 @@
 # phonenumber v0.2.1 - phased plasma rifle in the 40-watt range
 
-- changing for loops to lapply
+- change for loops to lapply
+- remove ineffective error-checking
 
 # phonenumber v0.2.0 - memetic polyalloy
 
