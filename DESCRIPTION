@@ -1,6 +1,6 @@
 Package: phonenumber
 Title: Convert Letters to Numbers and Back as on a Telephone Keypad
-Version: 0.2.0
+Version: 0.2.0.9999
 Authors@R: person("Steve", "Myles", email = "steve@mylesandmyles.info", role = c("aut", "cre"))
 Description: Convert English letters to numbers or numbers to English letters as 
     on a telephone keypad. When converting letters to numbers, a character 

@@ -1,3 +1,7 @@
+# phonenumber v0.2.0.9999 -
+
+- starting new version
+
 # phonenumber v0.2.0 - memetic polyalloy
 
 - add user determination of whether to map "Q" and "Z" to 7 and 9 or to 0
