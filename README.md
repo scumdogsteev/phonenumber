@@ -1,4 +1,6 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+[![Travis-CI Build Status](https://travis-ci.org/scumdogsteev/phonenumber.svg?branch=master)](https://travis-ci.org/scumdogsteev/phonenumber) [![Coverage Status](https://coveralls.io/repos/scumdogsteev/phonenumber/badge.svg?branch=master&service=github)](https://coveralls.io/github/scumdogsteev/phonenumber?branch=master)
+
 phonenumber
 ===========
 
