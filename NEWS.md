@@ -1,6 +1,6 @@
-# phonenumber v0.2.0.9999 -
+# phonenumber v0.2.1 - phased plasma rifle in the 40-watt range
 
-- starting new version
+- changing for loops to lapply
 
 # phonenumber v0.2.0 - memetic polyalloy
 

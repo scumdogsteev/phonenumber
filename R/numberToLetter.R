@@ -51,19 +51,15 @@ numberToLetter <- function(value, decreasing = FALSE, qz = 1) {
             if (char == "9") { strsplit(LETTERS[23:26], "") } else { char } 
             }}}}}}}
         }
-        for (char in valueSplit) {        
-            letterSplit <- if (qz == 0) { if (char == "0") { list(LETTERS[17], 
-                                                                  LETTERS[26]) 
-                                        } else { 
-                                          if (char == "7") { c(LETTERS[16], 
-                                                      strsplit(LETTERS[18:19],
-                                                               "")) } else { 
-                                          if (char == "9") { 
-                                              strsplit(LETTERS[23:25], "") }
-                                          else { phonemap(char) }}}} 
-                           else { phonemap(char) }
-            strList[[length(strList) + 1]] <- letterSplit
-        }
+        letterSplit <- function(char) { 
+            if (qz == 0) {if (char == "0") { list(LETTERS[17], LETTERS[26]) 
+            } else { if (char == "7") { c(LETTERS[16], strsplit(LETTERS[18:19],
+                                        "")) } 
+                else { if (char == "9") { strsplit(LETTERS[23:25], "") }
+                                                  else { phonemap(char) }}}} 
+            else { phonemap(char) }
+            }
+        strList <- lapply(valueSplit, letterSplit)
         strDF <- expand.grid(strList)
         lettString <- do.call(paste0, strDF[1:ncol(strDF)])
         lettString <- sort(lettString, decreasing)

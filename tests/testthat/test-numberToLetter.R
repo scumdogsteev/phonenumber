@@ -20,6 +20,7 @@ test_that("numberToLetter returns the correct letters", {
     expect_equal(numberToLetter("!"), "-")
     expect_equal(numberToLetter(" "), "-")
     expect_equal(numberToLetter("911!"), c("W11-", "X11-", "Y11-", "Z11-"))    
+    expect_equal(numberToLetter("911!", qz=0), c("W11-", "X11-", "Y11-"))    
     expect_equal(numberToLetter("000"), "000")
     expect_equal(numberToLetter("000", qz = 0), c("QQQ", "QQZ", "QZQ", "QZZ", 
                                                   "ZQQ", "ZQZ", "ZZQ", "ZZZ"))
