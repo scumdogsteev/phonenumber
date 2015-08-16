@@ -14,11 +14,11 @@ knitr::opts_chunk$set(
 )
 ```
 
-[![Travis-CI Build Status](https://travis-ci.org/scumdogsteev/phonenumber.svg?branch=master)](https://travis-ci.org/scumdogsteev/phonenumber) [![Coverage Status](https://coveralls.io/repos/scumdogsteev/phonenumber/badge.svg?branch=master&service=github)](https://coveralls.io/github/scumdogsteev/phonenumber?branch=master)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/mlsjunkgen)](http://cran.r-project.org/package=mlsjunkgen) [![Travis-CI Build Status](https://travis-ci.org/scumdogsteev/phonenumber.svg?branch=master)](https://travis-ci.org/scumdogsteev/phonenumber) [![Coverage Status](https://coveralls.io/repos/scumdogsteev/phonenumber/badge.svg?branch=master&service=github)](https://coveralls.io/github/scumdogsteev/phonenumber?branch=master)
 
 # phonenumber
 
-**`phonenumber`** is an R package that convert English letters to numbers or
+**`phonenumber`** is an R package that converts English letters to numbers or
 numbers to English letters as on a telephone keypad.
 
 Author:  Steve Myles (steve@mylesandmyles.info)
@@ -27,7 +27,7 @@ Project Home:  http://steve.mylesandmyles.info/projects/phonenumber/
 
 License:  MIT license 
 
-#### Background
+### Background
 
 When I recently posted some of my [Turbo Pascal Stuff](http://steve.mylesandmyles.info/projects/turbo-pascal-stuff/), I found an incomplete 
 program that was supposed to do this. I was active on [BBSes](https://en.wikipedia.org/wiki/Bulletin_board_system) and, though I don't 
@@ -42,34 +42,6 @@ I decided to create this functionality in R for three reasons:
 2. to learn to publish a package to CRAN
 3. to serve as a possible pedagogical example for others as it involves working 
 with lists, splitting strings, and the [expand.grid](https://stat.ethz.ch/R-manual/R-devel/library/base/html/expand.grid.html) function.
-
-### Installation
-
-* `phonenumber` is available [on CRAN](http://cran.r-project.org/web/packages/phonenumber/index.html) and can be
-installed accordingly:
-```r
-install.packages("phonenumber")
-library(phonenumber)
-```
-* You can also install `phonenumber` from GitHub using the `devtools` package:
-```r
-install.packages("devtools")
-library("devtools")
-install_github("scumdogsteev/phonenumber")
-library(phonenumber)
-```
-
-### Usage
-
-The package consists of two 
-functions:
-
-1. `letterToNumber` - converts letters in a string to numbers
-2. `numberToLetter` - converts numbers in a string to letters
-
-Both functions convert non-alphanumeric characters to dash (-) and perform no
-conversion on their respective base character type (i.e., `letterToNumber` 
-leaves letters as is and `numberToLetter` leaves numbers as is).
 
 #### Telephone keypad
 
@@ -98,7 +70,34 @@ keypad are as follows:
     * 0 corresponds to Q, Z
     * 1 has no corresponding letters
 
-#### Examples
+### Installation
+
+* `phonenumber` is available [on CRAN](http://cran.r-project.org/web/packages/phonenumber/index.html) and can be
+installed accordingly:
+```r
+install.packages("phonenumber")
+library(phonenumber)
+```
+* You can also install `phonenumber` from GitHub using the `devtools` package:
+```r
+install.packages("devtools")
+library("devtools")
+install_github("scumdogsteev/phonenumber")
+library(phonenumber)
+```
+
+### Usage
+
+The package consists of two functions:
+
+1. `letterToNumber` - converts letters in a string to numbers
+2. `numberToLetter` - converts numbers in a string to letters
+
+Both functions convert non-alphanumeric characters to dash (-) and perform no
+conversion on their respective base character type (i.e., `letterToNumber` 
+leaves letters as is and `numberToLetter` leaves numbers as is).
+
+### Examples
 
 ```{r library, echo=FALSE}
 library(phonenumber)
