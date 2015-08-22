@@ -71,7 +71,8 @@ library(phonenumber)
 ## `letterToNumber`
 
 `letterToNumber` converts a string containing letters into the corresponding 
-numbers on a telephone's keypad. For example, if the user wants to know what telephone number corresponds to "Texas:"
+numbers on a telephone's keypad. For example, if the user wants to know what 
+telephone number corresponds to "Texas:"
 
 ```{r letterToNumber ex1}
 string <- "Texas"
