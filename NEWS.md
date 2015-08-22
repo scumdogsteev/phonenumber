@@ -1,3 +1,7 @@
+# phonenumber v0.2.2 - machine phase matter
+
+- tweaks to vignette and documentation
+
 # phonenumber v0.2.1 - phased plasma rifle in the 40-watt range
 
 - change for loops to lapply

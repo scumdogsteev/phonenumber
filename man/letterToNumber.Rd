@@ -32,7 +32,7 @@ letterToNumber(string) # returns "74663-686237"
 # Alphanumeric strings can also be converted with numbers being returned as
 # is
 
-letterToNumber("Jenny's Number is 867-5309") # returns "53669-7-686237-47-867-5309"
+letterToNumber("Jenny's number is 867-5309") # returns "53669-7-686237-47-867-5309"
 
 # Specifying qz = 0 maps "q" and "z" to 0 instead of 7 and 9
 

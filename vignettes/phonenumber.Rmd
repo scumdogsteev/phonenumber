@@ -81,11 +81,18 @@ letterToNumber(string)
 
 The function is not limited to letters, though. Any numeric characters are
 returned as is and any non-alphanumeric characters (including spaces) are 
-converted to dashes (-) and 1 and 0 are returned as is:
+converted to dashes (-):
 
 ```{r letterToNumber ex2, echo = TRUE}
 string <- "Texas is #1"
 letterToNumber(string)
+```
+
+Strings need not be limited to any specific format and all numbers are returned 
+as is:
+
+```{r letterToNumber ex3, echo = TRUE}
+letterToNumber("Jenny's number is 867-5309")
 ```
 
 ## `numberToLetter`
