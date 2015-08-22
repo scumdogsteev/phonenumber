@@ -1,9 +1,13 @@
 ## Test environments
-* local Windows 8.1 64-bit, R 3.2.2
+* local Windows 8.1 64-bit, R 3.2.1
 * win-builder (devel and release)
 
 ## R CMD check results
-There were no ERRORs or WARNINGs.
+There were no ERRORs.
+
+There was 1 WARNING:
+* checking package dependencies ...Warning: unable to access index for repository https://cran.rstudio.com/src/contrib
+ OK
 
 There were 2 NOTEs:
 * checking CRAN incoming feasibility ... NOTE

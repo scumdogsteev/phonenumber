@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/mlsjunkgen)](http://cran.r-project.org/package=mlsjunkgen) [![Travis-CI Build Status](https://travis-ci.org/scumdogsteev/phonenumber.svg?branch=master)](https://travis-ci.org/scumdogsteev/phonenumber) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/scumdogsteev/phonenumber?branch=master)](https://ci.appveyor.com/project/scumdogsteev/phonenumber) [![Coverage Status](https://coveralls.io/repos/scumdogsteev/phonenumber/badge.svg?branch=master&service=github)](https://coveralls.io/github/scumdogsteev/phonenumber?branch=master) [![RStudio CRAN mirror downloads](http://cranlogs.r-pkg.org/badges/grand-total/phonenumber)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/mlsjunkgen)](http://cran.r-project.org/package=mlsjunkgen) [![Travis-CI Build Status](https://travis-ci.org/scumdogsteev/phonenumber.svg?branch=master)](https://travis-ci.org/scumdogsteev/phonenumber) [![Coverage Status](https://coveralls.io/repos/scumdogsteev/phonenumber/badge.svg?branch=master&service=github)](https://coveralls.io/github/scumdogsteev/phonenumber?branch=master)
 
 # phonenumber
 
@@ -104,8 +104,7 @@ library(phonenumber)
 ```
 
 **`letterToNumber`** converts a string containing letters into the corresponding 
-numbers on a telephone's keypad. For example, if the user wants to know what 
-telephone number corresponds to "Texas:"
+numbers on a telephone's keypad. For example, if the user wants to know what telephone number corresponds to "Texas:"
 
 ```{r letterToNumber}
 string <- "Texas"
