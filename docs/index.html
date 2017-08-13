@@ -108,30 +108,6 @@
 </li>
 </ul>
 </div>
-<div id="usage" class="section level3">
-<h3 class="hasAnchor">
-<a href="#usage" class="anchor"></a>Usage</h3>
-<p>The package consists of two functions:</p>
-<ol style="list-style-type: decimal">
-<li>
-<code>letterToNumber</code> - converts letters in a string to numbers</li>
-<li>
-<code>numberToLetter</code> - converts numbers in a string to letters</li>
-</ol>
-<p>Both functions convert non-alphanumeric characters to dash (-) and perform no conversion on their respective base character type (i.e., <code>letterToNumber</code> leaves letters as is and <code>numberToLetter</code> leaves numbers as is).</p>
-</div>
-<div id="examples" class="section level3">
-<h3 class="hasAnchor">
-<a href="#examples" class="anchor"></a>Examples</h3>
-<p><strong><code>letterToNumber</code></strong> converts a string containing letters into the corresponding numbers on a telephone’s keypad. For example, if the user wants to know what telephone number corresponds to “Texas:”</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">string &lt;-<span class="st"> "Texas"</span>
-<span class="kw"><a href="reference/letterToNumber.html">letterToNumber</a></span>(string)
-<span class="co">#&gt; [1] "83927"</span></code></pre></div>
-<p><strong><code>numberToLetter</code></strong> converts a string containing numbers into the corresponding letters on a telephone’s keypad. For example, if the user wants to know what possible character strings could be spelled by a sequence of numbers (e.g., 22):</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">string &lt;-<span class="st"> "22"</span>
-<span class="kw"><a href="reference/numberToLetter.html">numberToLetter</a></span>(string)
-<span class="co">#&gt; [1] "AA" "AB" "AC" "BA" "BB" "BC" "CA" "CB" "CC"</span></code></pre></div>
-</div>
 </div>
 </div>
   </div>
