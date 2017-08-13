@@ -1,7 +1,7 @@
 ---
 title: "phonenumber"
 author: "Steve Myles"
-date: "`r Sys.Date()`"
+date: 2015-09-07
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{phonenumber}

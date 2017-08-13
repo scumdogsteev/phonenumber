@@ -1,0 +1,6 @@
+urls:
+  reference: http://s.mylesandmyles.info/packages/phonenumber//reference
+  article: http://s.mylesandmyles.info/packages/phonenumber//articles
+articles:
+  phonenumber: phonenumber.html
+

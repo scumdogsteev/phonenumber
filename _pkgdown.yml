@@ -1,0 +1,23 @@
+url: http://s.mylesandmyles.info/packages/phonenumber/
+authors:
+  Steve Myles:
+  href: http://s.mylesandmyles.info/
+  
+template:
+  params:
+    analytics: UA-15892472-12
+    bootswatch: simplex
+
+navbar:
+  left:
+    - icon: fa-home fa-lg
+      href: index.html
+    - text: "Documentation"
+      href: articles/phonenumber.html
+    - text: "Functions"
+      href: reference/index.html
+    - text: "Changelog"
+      href: news/index.html
+  right:
+    - icon: fa-github fa-lg
+      href: https://github.com/scumdogsteev/phonenumber

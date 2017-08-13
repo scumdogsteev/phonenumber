@@ -1,13 +1,13 @@
-# phonenumber v0.2.2 - machine phase matter
+# phonenumber 0.2.2 - machine phase matter
 
 - tweaks to vignette and documentation
 
-# phonenumber v0.2.1 - phased plasma rifle in the 40-watt range
+# phonenumber 0.2.1 - phased plasma rifle in the 40-watt range
 
 - change for loops to lapply
 - remove ineffective error-checking
 
-# phonenumber v0.2.0 - memetic polyalloy
+# phonenumber 0.2.0 - memetic polyalloy
 
 - add user determination of whether to map "Q" and "Z" to 7 and 9 or to 0
 - add additional tests due to new functionality
@@ -18,6 +18,6 @@
 - add URLs to DESCRIPTION
 - updates to README
 
-# phonenumber v0.1.0 - hyperalloy combat chassis
+# phonenumber 0.1.0 - hyperalloy combat chassis
 
 - first version of phonenumber

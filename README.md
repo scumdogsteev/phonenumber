@@ -1,3 +1,4 @@
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/phonenumber)](http://cran.r-project.org/package=phonenumber) [![Travis-CI Build Status](https://travis-ci.org/scumdogsteev/phonenumber.svg?branch=master)](https://travis-ci.org/scumdogsteev/phonenumber) [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/f9cm5ixhl4934dck?svg=true)](https://ci.appveyor.com/project/scumdogsteev/phonenumber) [![Coverage Status](https://coveralls.io/repos/scumdogsteev/phonenumber/badge.svg?branch=master&service=github)](https://coveralls.io/github/scumdogsteev/phonenumber?branch=master) [![RStudio CRAN mirror downloads](http://cranlogs.r-pkg.org/badges/grand-total/phonenumber)](http://cran.rstudio.com/web/packages/phonenumber/index.html)
 
@@ -6,9 +7,11 @@ phonenumber
 
 **`phonenumber`** is an R package that converts English letters to numbers or numbers to English letters as on a telephone keypad.
 
-Author: Steve Myles (<steve@mylesandmyles.info>)
+Author: Steve Myles
 
-Project Home: <http://steve.mylesandmyles.info/projects/phonenumber/>
+Project Home: <http://s.mylesandmyles.info/phonenumber/>
+
+Blog Post: <http://steve.mylesandmyles.info/projects/phonenumber/>
 
 License: MIT license
 
@@ -61,7 +64,7 @@ For purposes of this package, the mapping of numbers to letters on a telephone's
 
     ``` r
     install.packages("devtools")
-    library("devtools")
+    library(devtools)
     install_github("scumdogsteev/phonenumber")
     library(phonenumber)
     ```

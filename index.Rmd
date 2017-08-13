@@ -19,14 +19,6 @@ knitr::opts_chunk$set(
 **`phonenumber`** is an R package that converts English letters to numbers or
 numbers to English letters as on a telephone keypad.
 
-Author:  Steve Myles
-
-Project Home:  http://s.mylesandmyles.info/phonenumber/
-
-Blog Post:  http://steve.mylesandmyles.info/projects/phonenumber/ 
-
-License:  MIT license 
-
 ### Background
 
 When I recently posted some of my [Turbo Pascal Stuff](http://steve.mylesandmyles.info/projects/turbo-pascal-stuff/), I found an incomplete 
@@ -42,33 +34,6 @@ I decided to create this functionality in R for three reasons:
 2. to learn to publish a package to CRAN
 3. to serve as a possible pedagogical example for others as it involves working 
 with lists, splitting strings, and the [expand.grid](https://stat.ethz.ch/R-manual/R-devel/library/base/html/expand.grid.html) function.
-
-#### Telephone keypad
-
-For purposes of this package, the mapping of numbers to letters on a telephone's
-keypad are as follows:
-
-* *Default behavior* - if parameter `qz` is omitted (or has a value other than 0):  
-    * 2 corresponds to A, B, C
-    * 3 corresponds to D, E, F
-    * 4 corresponds to G, H, I
-    * 5 corresponds to J, K, L
-    * 6 corresponds to M, N, O
-    * 7 corresponds to P, Q, R, S
-    * 8 corresponds to T, U, V
-    * 9 corresponds to W, X, Y, Z
-    * 0 and 1 have no corresponding letters
-* *Alternate behavior* - if parameter `qz` = 0:
-    * 2 corresponds to A, B, C
-    * 3 corresponds to D, E, F
-    * 4 corresponds to G, H, I
-    * 5 corresponds to J, K, L
-    * 6 corresponds to M, N, O
-    * 7 corresponds to P, R, S
-    * 8 corresponds to T, U, V
-    * 9 corresponds to W, X, Y
-    * 0 corresponds to Q, Z
-    * 1 has no corresponding letters
 
 ### Installation
 
