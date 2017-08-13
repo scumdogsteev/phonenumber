@@ -21,3 +21,5 @@ navbar:
   right:
     - icon: fa-github fa-lg
       href: https://github.com/scumdogsteev/phonenumber
+    - icon: fa-arrow-circle-up fa-lg
+      href: http://s.mylesandmyles.info/
