@@ -6,5 +6,5 @@ NEWS\.md
 ^README-.*\.png$
 ^\.travis\.yml$
 ^appveyor\.yml$
-^C:\Users\Myles and Myles\Documents\GitHub\phonenumber\docs$
+^docs$
 ^_pkgdown\.yml$
