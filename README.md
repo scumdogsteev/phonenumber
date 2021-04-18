@@ -1,31 +1,16 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# phonenumber <img src="man/figures/logo.png" align="right" height="139" />
+# phonenumber <img src="../logo.png" align="right" height="139" />
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/scumdogsteev/phonenumber/workflows/R-CMD-check/badge.svg)](https://github.com/scumdogsteev/phonenumber/actions)[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/phonenumber)](http://cran.r-project.org/package=phonenumber)
-[![Travis-CI Build
-Status](https://travis-ci.org/scumdogsteev/phonenumber.svg?branch=master)](https://travis-ci.org/scumdogsteev/phonenumber)
-[![Appveyor Build
-status](https://ci.appveyor.com/api/projects/status/f9cm5ixhl4934dck?svg=true)](https://ci.appveyor.com/project/scumdogsteev/phonenumber)
+[![R-CMD-check](https://github.com/scumdogsteev/phonenumber/workflows/R-CMD-check/badge.svg)](https://github.com/scumdogsteev/phonenumber/actions)[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/phonenumber)](https://cran.r-project.org/package=phonenumber)
 [![Coverage
 Status](https://coveralls.io/repos/scumdogsteev/phonenumber/badge.svg?branch=master&service=github)](https://coveralls.io/github/scumdogsteev/phonenumber?branch=master)
 [![RStudio CRAN mirror
-downloads](http://cranlogs.r-pkg.org/badges/grand-total/phonenumber)](http://cran.rstudio.com/web/packages/phonenumber/index.html)
+downloads](https://cranlogs.r-pkg.org/badges/grand-total/phonenumber)](https://cran.rstudio.com/package=phonenumber)
 <!-- badges: end -->
-
-**`phonenumber`** converts English letters to numbers or numbers to
-English letters as on a telephone keypad.
-
-Author: Steve Myles
-
-Project Home: <http://stevemyles.site/phonenumber/>
-
-Blog Post: <https://stevemyles.site/blog/2015/07/12/phonenumber/>
-
-License: MIT license
 
 ### Background
 
