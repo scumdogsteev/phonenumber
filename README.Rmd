@@ -12,24 +12,26 @@ knitr::opts_chunk$set(
 )
 ```
 
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/phonenumber)](http://cran.r-project.org/package=phonenumber) [![Travis-CI Build Status](https://travis-ci.org/scumdogsteev/phonenumber.svg?branch=master)](https://travis-ci.org/scumdogsteev/phonenumber) [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/f9cm5ixhl4934dck?svg=true)](https://ci.appveyor.com/project/scumdogsteev/phonenumber) [![Coverage Status](https://coveralls.io/repos/scumdogsteev/phonenumber/badge.svg?branch=master&service=github)](https://coveralls.io/github/scumdogsteev/phonenumber?branch=master) [![RStudio CRAN mirror downloads](http://cranlogs.r-pkg.org/badges/grand-total/phonenumber)](http://cran.rstudio.com/web/packages/phonenumber/index.html)
+# phonenumber <img src="man/figures/logo.png" align="right" height="139" />
 
-# phonenumber
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/scumdogsteev/phonenumber/workflows/R-CMD-check/badge.svg)](https://github.com/scumdogsteev/phonenumber/actions)[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/phonenumber)](http://cran.r-project.org/package=phonenumber) [![Travis-CI Build Status](https://travis-ci.org/scumdogsteev/phonenumber.svg?branch=master)](https://travis-ci.org/scumdogsteev/phonenumber) [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/f9cm5ixhl4934dck?svg=true)](https://ci.appveyor.com/project/scumdogsteev/phonenumber) [![Coverage Status](https://coveralls.io/repos/scumdogsteev/phonenumber/badge.svg?branch=master&service=github)](https://coveralls.io/github/scumdogsteev/phonenumber?branch=master) [![RStudio CRAN mirror downloads](http://cranlogs.r-pkg.org/badges/grand-total/phonenumber)](http://cran.rstudio.com/web/packages/phonenumber/index.html)
+<!-- badges: end -->
 
-**`phonenumber`** is an R package that converts English letters to numbers or
+**`phonenumber`** converts English letters to numbers or
 numbers to English letters as on a telephone keypad.
 
 Author:  Steve Myles
 
-Project Home:  http://s.mylesandmyles.info/phonenumber/
+Project Home:  http://stevemyles.site/phonenumber/
 
-Blog Post:  http://steve.mylesandmyles.info/projects/phonenumber/ 
+Blog Post:  https://stevemyles.site/blog/2015/07/12/phonenumber/
 
 License:  MIT license 
 
 ### Background
 
-When I recently posted some of my [Turbo Pascal Stuff](http://steve.mylesandmyles.info/projects/turbo-pascal-stuff/), I found an incomplete 
+When I recently posted some of my [Turbo Pascal Stuff](https://stevemyles.site/blog/2015/06/19/turbo-pascal-stuff/), I found an incomplete 
 program that was supposed to do this. I was active on [BBSes](https://en.wikipedia.org/wiki/Bulletin_board_system) and, though I don't 
 recall the reason, I wanted a way to determine the possible words spelled by the
 BBS phone numbers (and/or how to determine what phone numbers correspond to 
@@ -72,7 +74,7 @@ keypad are as follows:
 
 ### Installation
 
-* `phonenumber` is available [on CRAN](http://cran.r-project.org/web/packages/phonenumber/index.html) and can be
+* `phonenumber` is available [on CRAN](http://cran.r-project.org/package=phonenumber) and can be
 installed accordingly:
 ```r
 install.packages("phonenumber")

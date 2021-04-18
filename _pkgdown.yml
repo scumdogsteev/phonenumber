@@ -1,8 +1,8 @@
-url: http://s.mylesandmyles.info/packages/phonenumber/
+url: https://stevemyles.site/phonenumber/
 authors:
   Steve Myles:
-  href: http://s.mylesandmyles.info/
-  
+  href: https://stevemyles.site/
+
 template:
   params:
     analytics: UA-15892472-12
@@ -16,10 +16,10 @@ navbar:
       href: articles/phonenumber.html
     - text: "Functions"
       href: reference/index.html
-    - text: "Changelog"
+    - text: "News"
       href: news/index.html
   right:
     - icon: fa-github fa-lg
       href: https://github.com/scumdogsteev/phonenumber
     - icon: fa-arrow-circle-up fa-lg
-      href: http://s.mylesandmyles.info/
+      href: https://stevemyles.site/

@@ -1,6 +1,5 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
-NEWS\.md
 ^cran-comments\.md$
 ^README\.Rmd$
 ^README-.*\.png$
@@ -8,3 +7,5 @@ NEWS\.md
 ^appveyor\.yml$
 ^docs$
 ^_pkgdown\.yml$
+^pkgdown$
+^\.github$

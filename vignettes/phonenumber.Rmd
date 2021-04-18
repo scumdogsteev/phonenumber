@@ -18,7 +18,7 @@ the character string need not conform to any standard length telephone number.
 
 ### Background
 
-When I recently posted some of my [Turbo Pascal Stuff](http://steve.mylesandmyles.info/projects/turbo-pascal-stuff/), I found an incomplete 
+When I recently posted some of my [Turbo Pascal Stuff](https://stevemyles.site/blog/2015/06/19/turbo-pascal-stuff/), I found an incomplete 
 program that was supposed to do this. I was active on [BBSes](https://en.wikipedia.org/wiki/Bulletin_board_system) and, though I don't 
 recall the reason, I wanted a way to determine the possible words spelled by the
 BBS phone numbers (and/or how to determine what phone numbers correspond to 
@@ -79,7 +79,7 @@ string <- "Texas"
 letterToNumber(string)
 ```
 
-The function is not limited to letters, though. Any numeric characters are
+The function is not limited to letters. Any numeric characters are
 returned as is and any non-alphanumeric characters (including spaces) are 
 converted to dashes (-):
 
@@ -106,7 +106,7 @@ string <- "22"
 numberToLetter(string)
 ```
 
-The function is not limited to numbers, though. Any alphabetic characters are
+The function is not limited to numbers. Any alphabetic characters are
 returned as is and any non-alphanumeric characters (including spaces) are 
 converted to dashes (-) and 1 and 0 are returned as is:
 
