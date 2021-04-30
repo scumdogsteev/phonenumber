@@ -19,7 +19,7 @@ navbar:
     - text: "Changelog"
       href: news/index.html
   right:
-    - icon: fa-github fa-lg
+    - icon: fa-code fa-lg
       href: https://github.com/scumdogsteev/phonenumber
     - icon: fa-info-circle fa-lg
       href: https://stevemyles.site/blog/2015/07/12/phonenumber/

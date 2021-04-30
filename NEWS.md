@@ -1,7 +1,7 @@
 # phonenumber 0.2.3 - DN38416
 
 - add rmarkdown as a dependency for vignette
-- update project URL
+- update project and other URLs
 
 # phonenumber 0.2.2 - machine phase matter
 
