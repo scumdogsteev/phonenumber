@@ -63,7 +63,7 @@ telephone’s keypad are as follows:
 ### Installation
 
 -   `phonenumber` is available [on
-    CRAN](http://cran.r-project.org/package=phonenumber) and can be
+    CRAN](https://cran.r-project.org/package=phonenumber) and can be
     installed accordingly:
 
 ``` r
