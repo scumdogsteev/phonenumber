@@ -9,7 +9,7 @@
 [![Coverage
 Status](https://coveralls.io/repos/scumdogsteev/phonenumber/badge.svg?branch=master&service=github)](https://coveralls.io/github/scumdogsteev/phonenumber?branch=master)
 [![RStudio CRAN mirror
-downloads](https://cranlogs.r-pkg.org/badges/grand-total/phonenumber)](https://cran.rstudio.com/package=phonenumber)
+downloads](https://cranlogs.r-pkg.org/badges/grand-total/phonenumber)](https://cran.r-project.org/package=phonenumber)
 <!-- badges: end -->
 
 ### Background
